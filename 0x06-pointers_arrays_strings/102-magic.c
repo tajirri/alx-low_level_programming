@@ -8,10 +8,9 @@ int main(void)
 
   a[2] = 1024;
   p = &n;
- /*
-   * dont use a
-   * dont use p
-   * dont code anything else than this line of code
+  /*
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
    */
   *(p + 5) = 98;
   /* ...so that this prints 98\n */
