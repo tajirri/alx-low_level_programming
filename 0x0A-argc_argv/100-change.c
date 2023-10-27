@@ -5,13 +5,13 @@ int main(int argc, char **argv)
 	char *p;
 	int cents[] = {25, 10, 5, 2};
 
-	if (argc != 2)
+	if (argv != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	total = strol(argv[1], &p, 10);
+	total = strol(argc[1], &p, 10);
 	count = 0;
 
 	if (!*p)
