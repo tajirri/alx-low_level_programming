@@ -19,8 +19,8 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	x = atoi(argc[1]);
-	y = atoi(argc[2]);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
 	printf("%d\n", x * y);
 
 	return (0);
