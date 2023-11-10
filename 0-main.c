@@ -1,7 +1,5 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
+#include "variadic_functions.h"
 
 /**
  * main - check the code
@@ -10,22 +8,11 @@
  */
 int main(void)
 {
-    char *c;
-    int *i;
-    float *f;
-    double *d;
+    int sum;
 
-    c = malloc_checked(sizeof(char) * 1024);
-    printf("%p\n", (void *)c);
-    i = malloc_checked(sizeof(int) * 402);
-    printf("%p\n", (void *)i);
-    f = malloc_checked(sizeof(float) * 100000000);
-    printf("%p\n", (void *)f);
-    d = malloc_checked(INT_MAX);
-    printf("%p\n", (void *)d);
-    free(c);
-    free(i);
-    free(f);
-    free(d);
+    sum = sum_them_all(2, 98, 1024);
+    printf("%d\n", sum);
+    sum = sum_them_all(4, 98, 1024, 402, -1024);
+    printf("%d\n", sum);    
     return (0);
 }
