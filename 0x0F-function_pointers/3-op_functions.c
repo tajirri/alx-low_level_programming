@@ -1,68 +1,68 @@
-#include "3-calc.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include "3-calc.h"
 /**
-  * op_add
-  * @x:
-  * @y:
-  *
-  */
-int op_add(int x, int y)
+ * op_add - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
+ */
+int op_add(int a, int b)
 {
-	return (x + y);
+	return (a + b);
 }
-
 /**
-  * op_sub 
-  * @x:
-  * @y:
-  */
-int op_sub(int x, int y)
+ * op_sub - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
+ */
+int op_sub(int a, int b)
 {
-	return (x - y);
+	return (a - b);
 }
-
 /**
-  * op_mul
-  * @x:
-  * @y:
-  *
-  */
-int op_mul(int x, int y)
+ * op_mul - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
+ */
+int op_mul(int a, int b)
 {
-	return (x * y);
+	return (a * b);
 }
-
 /**
-  * op_div 
-  * @x:
-  * @y:
-  */
-int op_div(int x, int y)
+ * op_div - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
+ */
+int op_div(int a, int b)
 {
-	if (y == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-
-	return (x / y);
+	return (a / b);
 }
-
 /**
-  * op_mod 
-  * @x:
-  * @y:
-  *
-  */
-int op_mod(int x, int y)
+ * op_mod - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
+ */
+int op_mod(int a, int b)
 {
-	if (y == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-
-	return (x % y);
+	return (a % b);
 }
