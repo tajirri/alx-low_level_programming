@@ -2,10 +2,9 @@
 
 /**
  * get_nodeint_at_index - the nth node of a listint_t linked list.
- * @head: pointer of the first node
- * @index: index is the index of the node
+ * @head: first node
  *
- * Return: pointer of Index
+ * Return: head
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -16,7 +15,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	for (i = 0; i < index; i++)
 	{
 		head = head->next;
-		if (next == NULL)
+		if (head == NULL)
 			return (NULL);
 	}
 	return (head);
