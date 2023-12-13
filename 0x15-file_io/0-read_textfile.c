@@ -1,3 +1,7 @@
+/*
+ * File: 0-read_textfile.c
+ * Auth: CW
+ */
 #include "main.h"
 #include <stdlib.h>
 
